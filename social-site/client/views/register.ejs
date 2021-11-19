@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="row">
+        <div class="register-div">
+            <h1>Register Here</h1>
+            <form action="/registerUser" method="POST" id="registration-form">
+                <table>
+                    <tr>
+                        <td><label for="username">Email</label></td>
+                        <td><input type="text" name="email" id="email" ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="firstName">FirstName</label></td>
+                        <td><input type="text" name="firstName" id="firstName"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="lastName" id="lastName">lastName</label></td>
+                        <td><input type="text" name="lastName" id="lastName"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="age">Age</label></td>
+                        <td><input type="text" name="age" id="age"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mobile">Phone</label></td>
+                        <td><input type="text" name="phone" id="phone"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="city">City</label></td>
+                        <td><input type="text" name="city"  id="city"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="state">State</label></td>
+                        <td><input type="text" name="state" id="state"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password</label></td>
+                        <td><input type="text" name="password" id="password"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="confirmpassword">Confirm Password</label></td>
+                        <td><input type="text" name="confirmpassword" id="confirm-password"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button type="submit" value="Submit" id="register-button">Register</button></td>
+                    </tr>
+                    <tr style="margin-top: 20px;">
+                        <td><label>Already account ?</label></td>
+                        <td><a class="redirect-page" href="./login">Login</a></td>
+                    </tr>
+                    
+                </table>
+            </form>
+
+
+        </div>
+
+    </div>
+</body>
+</html>

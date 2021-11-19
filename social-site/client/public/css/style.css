@@ -1,0 +1,91 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.row{
+    width: 1510px;
+    height: 750px;
+   
+}
+
+.profile-section{
+    width: 450px;
+    height: 750px;
+    float: left;
+    text-align: center;
+    border: 1px solid;
+}
+.post-section{
+    width: 600px;
+    height: 750px;
+    float: left;
+    text-align: center;
+    border: 1px solid;
+}
+.chat-section{
+    width: 450px;
+    height: 750px;
+    float: left;
+    text-align: center;
+    border: 1px solid;
+    
+}
+.register-div{
+    width: 500px;
+    height: 600px;
+    display: flexbox;
+    justify-content:flex-end;
+    text-justify: inter-word;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    border: 1px solid;
+    background-color: rgb(216, 183, 139);
+}
+input{
+    width: 200px;
+    height: 25px;
+    margin-top: 6px;
+    margin-left: 30px;
+    border-radius: 5px;
+    
+    
+}
+label{
+    margin-left: 50px;
+    text-align: left;
+    padding: 5px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+td{
+    text-align: left;
+}
+
+button{
+    width: 130px;
+    height: 35px;
+    margin-top: 20px;
+    margin-left:-30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    color: white    ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(43, 111, 238);
+}
+.redirect-page{
+   
+    margin-left: 80px;
+}
+.login-div{
+    width: 500px;
+    height: 300px;
+    display: flexbox;
+    justify-content:flex-end;
+    text-justify: inter-word;
+    text-align: center;
+    margin: auto;
+    margin-top: 220px;
+    border: 1px solid;
+    background-color: rgb(216, 183, 139);
+}
