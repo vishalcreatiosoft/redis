@@ -11,7 +11,7 @@
     <div class="row">
         <div class="register-div">
             <h1>Register Here</h1>
-            <form action="/registerUser" method="POST" id="registration-form">
+            <form action="/registerUser" method="POST" id="registration-form" enctype="multipart/form-data">
                 <table>
                     <tr>
                         <td><label for="username">Email</label></td>
@@ -50,9 +50,14 @@
                         <td><input type="text" name="confirmpassword" id="confirm-password"></td>
                     </tr>
                     <tr>
+                        <td><label for="uploadpicture">Upload Picture</label></td>
+                        <td><input type="file" name="file" ></td>
+                    </tr>
+                    <tr>
                         <td></td>
                         <td><button type="submit" value="Submit" id="register-button">Register</button></td>
                     </tr>
+                    
                     <tr style="margin-top: 20px;">
                         <td><label>Already account ?</label></td>
                         <td><a class="redirect-page" href="./login">Login</a></td>

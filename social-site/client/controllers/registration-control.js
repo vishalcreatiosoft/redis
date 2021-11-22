@@ -3,6 +3,7 @@ const Registration = require('../models/registration-model');
 const users = {};
 
 
+
 users.registerUser = async(userData)=>{
     try{
         const register = new Registration(userData);
@@ -28,6 +29,7 @@ users.loginUser = async(loginInfo)=>{
         console.log('Unable to login',e);
     }
 }
+
 
 
 module.exports = users;

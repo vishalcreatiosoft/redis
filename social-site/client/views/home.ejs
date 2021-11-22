@@ -10,19 +10,74 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+    <h1> <%= data %> </h1>
+   
     <div class="row">
         <div class="profile-section">
-            
+            <h2 style="text-align: center;margin-left:-60px">Profile</h2>
+                
+            <div id="profile-pic-div"></div>
+            <div class="profile-content">
+                <!-- <form action="/updateProfile" method="POST">   -->
+                <table style="align-items: center;">
+
+                    <tr>
+                        <td><h4>Name</h4></td>
+                        <td><h4 id="name"></h4></td>
+                    </tr>
+                    <tr>
+                        <td><h4>Email</h4></td>
+                        <td><h4 id="email"></h4></td>
+                    </tr>
+                    <tr>
+                        <td><h4>Age</h4></td>
+                        <td><h4 id="age"></h4></td>
+                    </tr>
+                    <tr>
+                        <td><h4>Phone</h4></td>
+                        <td><h4 id="phone"></h4></td>
+                    </tr>
+                    <tr>
+                        <td><h4>City</h4></td>
+                        <td><h4 id="city"></h4></td>
+                    </tr>
+                    <tr>
+                        <td><h4>State</h4></td>
+                        <td><h4 id="state"></h4></td>
+                    </tr>
+                </table>
+
+                              
+                    <!-- <button value="submit" name="updatebtn">Update Profile</button>                 -->
+                <!-- </form> -->
+            </div>
         </div>
         <div class="post-section">
-            <h1><%=data%></h1>
+            
             <h2>Welcome to Social-Site</h2>
             <h2 id="welcome-msg"></h2>
+
+            <div class="post-div">
+                <form action="/userPost" method="post">
+                    <table>
+                        <tr>
+                            <td><textarea name="postMessage" id="post-message" cols="50" rows="2" placeholder="Write your post here..."></textarea></td>
+                            <td><button type="submit" value="Submit" id="postbtn">Post</button></td>
+                        </tr>
+                    </table>
+                </form>
+            </div> 
+            
+            
         </div>
-        <div class="chat-section">df</div>
+        <div class="chat-section">
+            <form action="/logout" method="post">
+                <button type="submit" value="Submit" id="logoutbtn">logout</button>
+            </form>    
+        </div>
     </div>
 
 
-   
+   <script src="../routes/route.js"></script>
 </body>
 </html>
